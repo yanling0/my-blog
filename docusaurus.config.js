@@ -3,9 +3,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-	title: 'My Site',
-	tagline: 'Dinosaurs are cool',
-	url: 'https://your-docusaurus-test-site.com',
+	title: 'Mona魔法屋',
+	// tagline: 'Dinosaurs are cool',
+	url: 'https://yanling.vercel.app/',
 	baseUrl: '/',
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'warn',
@@ -14,19 +14,23 @@ module.exports = {
 	projectName: 'docusaurus', // Usually your repo name.
 	themeConfig: {
 		navbar: {
-			title: 'My Site',
+			title: 'Mona魔法屋',
 			logo: {
 				alt: 'My Site Logo',
 				src: 'img/logo.svg',
 			},
 			items: [
+				// {
+				// 	type: 'doc',
+				// 	docId: 'intro',
+				// 	position: 'left',
+				// 	label: 'Tutorial',
+				// },
 				{
-					type: 'doc',
-					docId: 'intro',
-					position: 'left',
-					label: 'Tutorial',
+					to: '/',
+					label: 'Blog',
+					position: 'right',
 				},
-				{ to: '/blog', label: 'Blog', position: 'left' },
 				{
 					href: 'https://github.com/yanling0',
 					label: 'GitHub',
@@ -38,28 +42,20 @@ module.exports = {
 			style: 'dark',
 			links: [
 				{
-					title: 'Docs',
+					title: '关于',
 					items: [
 						{
-							label: 'Tutorial',
+							label: '个人简介',
 							to: '/docs/intro',
 						},
 					],
 				},
 				{
-					title: 'Community',
+					title: '社交媒体',
 					items: [
 						{
-							label: 'Stack Overflow',
-							href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-						},
-						{
-							label: 'Discord',
-							href: 'https://discordapp.com/invite/docusaurus',
-						},
-						{
-							label: 'Twitter',
-							href: 'https://twitter.com/docusaurus',
+							label: 'GitHub',
+							href: 'https://github.com/yanling0',
 						},
 					],
 				},
@@ -70,14 +66,10 @@ module.exports = {
 							label: 'Blog',
 							to: '/blog',
 						},
-						{
-							label: 'GitHub',
-							href: 'https://github.com/yanling0',
-						},
 					],
 				},
 			],
-			copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+			copyright: `Copyright © ${new Date().getFullYear()} Mona Built with Docusaurus.`,
 		},
 		prism: {
 			theme: lightCodeTheme,
