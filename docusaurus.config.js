@@ -3,7 +3,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-	title: "Adalia's Notebook",
+	title: 'Notebook',
 	// tagline: 'Dinosaurs are cool',
 	url: 'https://yanling.vercel.app/',
 	baseUrl: '/',
@@ -14,7 +14,7 @@ module.exports = {
 	projectName: 'docusaurus', // Usually your repo name.
 	themeConfig: {
 		navbar: {
-			title: "Adalia's Notebook",
+			title: 'Notebook',
 			logo: {
 				alt: 'My Site Logo',
 				src: 'img/logo.svg',
